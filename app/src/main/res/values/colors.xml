@@ -2,4 +2,6 @@
     <color name="red">#FF0000</color>
     <color name="purple">#40024B</color>
     <color name="blue_color">#0000FF</color>
+    <color name="player_x_color">#FF5722</color>
+    <color name="player_o_color">#4CAF50</color>
 </resources>

@@ -37,23 +37,26 @@ class MainActivity : AppCompatActivity() {
         val row = index / 3
         val col = index % 3
 
-        // If cell is already clicked, return
         if (board[row][col] != null) return
 
-        // Update board with current player's symbol
         board[row][col] = currentPlayer
         button.text = currentPlayer
 
-        // Check if there's a winner
+        if (currentPlayer == "X") {
+            button.setTextColor(resources.getColor(R.color.player_x_color, theme))
+        } else {
+            button.setTextColor(resources.getColor(R.color.player_o_color, theme))
+        }
+
         if (checkWinner()) {
             Toast.makeText(this, "$currentPlayer wins!", Toast.LENGTH_SHORT).show()
             playAgainButton.visibility = View.VISIBLE
         } else {
-            // Switch player
             currentPlayer = if (currentPlayer == "X") "O" else "X"
-            updateStatusText() // Update the TextView to show the current player's turn
+            updateStatusText() // עדכון התצוגה של תור השחקן
         }
     }
+
 
     private fun checkWinner(): Boolean {
         // Check rows, columns, and diagonals
