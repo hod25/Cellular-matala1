@@ -1,0 +1,122 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player X's Turn"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:textColor="#000000" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="3"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <!-- 9 Buttons for Tic Tac Toe -->
+        <Button
+            android:id="@+id/button0"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:textSize="32sp"
+            android:textColor="#FF0000"
+            android:background="#0000FF" /> <!-- Blue color -->
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:textSize="32sp"
+            android:textColor="#FF0000"
+            android:background="#0000FF" /> <!-- Blue color -->
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:textSize="32sp"
+            android:textColor="#FF0000"
+            android:background="#0000FF" /> <!-- Blue color -->
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:textSize="32sp"
+            android:textColor="#FF0000"
+            android:background="#0000FF" /> <!-- Blue color -->
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:textSize="32sp"
+            android:textColor="#FF0000"
+            android:background="#0000FF" /> <!-- Blue color -->
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:textSize="32sp"
+            android:textColor="#FF0000"
+            android:background="#0000FF" /> <!-- Blue color -->
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:textSize="32sp"
+            android:textColor="#FF0000"
+            android:background="#0000FF" /> <!-- Blue color -->
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:textSize="32sp"
+            android:textColor="#FF0000"
+            android:background="#0000FF" /> <!-- Blue color -->
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:textSize="32sp"
+            android:textColor="#FF0000"
+            android:background="#0000FF" /> <!-- Blue color -->
+    </GridLayout>
+
+    <Button
+        android:id="@+id/playAgainButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play Again"
+        android:visibility="gone"
+        android:background="#673AB7"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
